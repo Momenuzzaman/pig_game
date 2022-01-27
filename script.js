@@ -69,5 +69,18 @@ btnHold.addEventListener('click', function(){
         }
    }
 });
+btnNew.addEventListener('click',function(){
+    score0El.textContent = 0;
+    score1El.textContent = 0;
+    current0El.textContent = 0;
+    current1El.textContent = 0;
+
+    diceEl.classList.add('hidden');
+    playerActive0.classList.remove('player--winner');
+    playerActive1.classList.remove('player--winner');
+    playerActive0.classList.add('player--active');
+    playerActive1.classList.remove('player--active');
+
+});
 
 
